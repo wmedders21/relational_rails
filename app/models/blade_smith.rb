@@ -1,0 +1,2 @@
+class BladeSmith < ApplicationRecord
+end
