@@ -9,9 +9,13 @@ RSpec.describe 'blades index page', type: :feature do
 
     visit '/blades'
     save_and_open_page
-    # expect(page).to have_content(blade_smith_1.name)
-    # expect(page).to have_content(blade_smith_2.name)
-    # expect(page).to have_content(blade_smith_3.name)
-    # expect(page).to have_content(blade_smith_4.name)
+    expect(page).to have_content(blade_1.model)
+    expect(page).to have_content(blade_1.length)
+    expect(page).to have_content(blade_1.blade_material)
+    expect(page).to have_content(blade_1.handle_material)
+    expect(page).to have_content(blade_1.available)
+    expect(page).to have_content(blade_1.id)
+    expect(page).to have_content(blade_1.created_at)
+    expect(page).to have_content(blade_1.updated_at)    
   end
 end
