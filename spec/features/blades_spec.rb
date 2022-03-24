@@ -8,7 +8,7 @@ RSpec.describe 'blades index page', type: :feature do
     blade_4 = Blade.create!(model: "Skinner", length: 170, blade_material: "High Carbon Steel", handle_material: "Figured Maple", available: false)
 
     visit '/blades'
-    # save_and_open_page
+    save_and_open_page
     expect(page).to have_content(blade_1.model)
     expect(page).to have_content(blade_1.length)
     expect(page).to have_content(blade_1.blade_material)

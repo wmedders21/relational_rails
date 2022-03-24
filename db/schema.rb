@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_03_23_222324) do
+ActiveRecord::Schema.define(version: 2022_03_23_235830) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -32,6 +32,9 @@ ActiveRecord::Schema.define(version: 2022_03_23_222324) do
     t.boolean "available"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.bigint "blade_smith_id"
+    t.index ["blade_smith_id"], name: "index_blades_on_blade_smith_id"
   end
 
+  add_foreign_key "blades", "blade_smiths"
 end
