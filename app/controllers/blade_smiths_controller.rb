@@ -1,7 +1,7 @@
 class BladeSmithsController < ApplicationController
 
   def index
-    @blade_smiths = BladeSmith.all
+    @blade_smiths = BladeSmith.sort_by_newest
   end
 
   def show
