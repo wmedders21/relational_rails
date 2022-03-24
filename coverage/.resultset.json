@@ -255,89 +255,9 @@
           null
         ]
       },
-      "/Users/willmedders/turing/2mod/projects/relational_rails/spec/features/blades_spec.rb": {
+      "/Users/willmedders/turing/2mod/projects/relational_rails/app/models/blade_smith.rb": {
         "lines": [
           1,
-          null,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          null,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          null,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          null,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          null,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          null,
-          null,
-          null,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          null,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          null,
-          null
-        ]
-      },
-      "/Users/willmedders/turing/2mod/projects/relational_rails/spec/models/blade_spec.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          1,
-          null
-        ]
-      },
-      "/Users/willmedders/turing/2mod/projects/relational_rails/app/models/blade.rb": {
-        "lines": [
           1,
           null
         ]
@@ -349,46 +269,13 @@
           null
         ]
       },
-      "/Users/willmedders/turing/2mod/projects/relational_rails/app/models/blade_smith.rb": {
+      "/Users/willmedders/turing/2mod/projects/relational_rails/app/models/blade.rb": {
         "lines": [
           1,
-          null
-        ]
-      },
-      "/Users/willmedders/turing/2mod/projects/relational_rails/app/controllers/blade_smiths_controller.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          1,
-          null,
-          null,
-          1,
-          1,
-          null,
-          null
-        ]
-      },
-      "/Users/willmedders/turing/2mod/projects/relational_rails/app/controllers/application_controller.rb": {
-        "lines": [
-          1,
-          null
-        ]
-      },
-      "/Users/willmedders/turing/2mod/projects/relational_rails/app/controllers/blades_controller.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          null,
-          null,
-          1,
-          1,
-          null,
           null
         ]
       }
     },
-    "timestamp": 1648080077
+    "timestamp": 1648083338
   }
 }
