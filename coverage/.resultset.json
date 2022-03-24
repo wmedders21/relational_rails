@@ -256,127 +256,6 @@
           null
         ]
       },
-      "/Users/willmedders/turing/2mod/projects/relational_rails/spec/features/blade_smiths_spec.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          null,
-          null,
-          null,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          null,
-          null
-        ]
-      },
-      "/Users/willmedders/turing/2mod/projects/relational_rails/spec/features/blades_spec.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          null,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          null,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          null,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          null,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          null,
-          null,
-          null,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          null,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          null,
-          null
-        ]
-      },
-      "/Users/willmedders/turing/2mod/projects/relational_rails/spec/models/blade_smith_spec.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          2,
-          null
-        ]
-      },
       "/Users/willmedders/turing/2mod/projects/relational_rails/app/models/blade_smith.rb": {
         "lines": [
           1,
@@ -391,26 +270,14 @@
           null
         ]
       },
-      "/Users/willmedders/turing/2mod/projects/relational_rails/spec/models/blade_spec.rb": {
+      "/Users/willmedders/turing/2mod/projects/relational_rails/app/controllers/blade_smiths_controller.rb": {
         "lines": [
           1,
           null,
           1,
           2,
-          null
-        ]
-      },
-      "/Users/willmedders/turing/2mod/projects/relational_rails/app/models/blade.rb": {
-        "lines": [
-          1,
-          1,
-          null
-        ]
-      },
-      "/Users/willmedders/turing/2mod/projects/relational_rails/app/controllers/blade_smith_blades_controller.rb": {
-        "lines": [
-          1,
-          1,
+          null,
+          null,
           1,
           1,
           null,
@@ -422,35 +289,8 @@
           1,
           null
         ]
-      },
-      "/Users/willmedders/turing/2mod/projects/relational_rails/app/controllers/blade_smiths_controller.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          1,
-          null,
-          null,
-          1,
-          1,
-          null,
-          null
-        ]
-      },
-      "/Users/willmedders/turing/2mod/projects/relational_rails/app/controllers/blades_controller.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          null,
-          null,
-          1,
-          1,
-          null,
-          null
-        ]
       }
     },
-    "timestamp": 1648154786
+    "timestamp": 1648158559
   }
 }
