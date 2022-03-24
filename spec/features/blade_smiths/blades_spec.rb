@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe 'blade_smith blades index page', type: :feature do
+RSpec.describe 'blade_smiths blades index page', type: :feature do
   before :each do
     @blade_smith_1 = BladeSmith.create!(name: "Willy White", state: "KY", avg_yearly_output: 324, hand_forger: true)
     @blade_1 = @blade_smith_1.blades.create!(model: "Patch Knife", length: 135, blade_material: "Damascus", handle_material: "Walnut", available: true)

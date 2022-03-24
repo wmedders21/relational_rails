@@ -255,10 +255,10 @@
           null
         ]
       },
-      "/Users/willmedders/turing/2mod/projects/relational_rails/app/models/blade_smith.rb": {
+      "/Users/willmedders/turing/2mod/projects/relational_rails/app/models/blade.rb": {
         "lines": [
           1,
-          1,
+          null,
           null
         ]
       },
@@ -268,14 +268,8 @@
           1,
           null
         ]
-      },
-      "/Users/willmedders/turing/2mod/projects/relational_rails/app/models/blade.rb": {
-        "lines": [
-          1,
-          null
-        ]
       }
     },
-    "timestamp": 1648083338
+    "timestamp": 1648083792
   }
 }
