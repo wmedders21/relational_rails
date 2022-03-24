@@ -1,3 +1,3 @@
 class BladeSmith < ApplicationRecord
-  # has_many :blades
+  has_many :blades
 end
