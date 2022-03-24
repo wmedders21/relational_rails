@@ -12,6 +12,7 @@ RSpec.describe BladeSmith, type: :model do
       blade_smith_4 = BladeSmith.create!(name: "Ka-Bar Knives, Inc.", state: "NY", avg_yearly_output: 15465, hand_forger: false)
       expect(BladeSmith.sort_by_newest).to eq([blade_smith_4, blade_smith_3, blade_smith_2, blade_smith_1])
     end
+  end
   describe '#model_count' do
     it 'returns the number of Blades associated with a BladeSmith' do
       blade_smith_1 = BladeSmith.create!(name: "Willy White", state: "KY", avg_yearly_output: 324, hand_forger: true)
@@ -20,7 +21,7 @@ RSpec.describe BladeSmith, type: :model do
       blade_3 = blade_smith_1.blades.create!(model: "Fighting Knife", length: 240, blade_material: "Tool Steel", handle_material: "Stacked Leather", available: false)
       blade_4 = blade_smith_1.blades.create!(model: "Skinner", length: 170, blade_material: "High Carbon Steel", handle_material: "Figured Maple", available: false)
 
-      expect(BladeSmith.model_count).to eq(4)
+      expect(blade_smith_1.model_count).to eq(4)
     end
   end
 end
