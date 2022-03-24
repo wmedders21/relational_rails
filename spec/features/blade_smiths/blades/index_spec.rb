@@ -8,8 +8,17 @@ RSpec.describe 'blade_smiths blades index page', type: :feature do
     @blade_3 = @blade_smith_1.blades.create!(model: "Fighting Knife", length: 240, blade_material: "Tool Steel", handle_material: "Stacked Leather", available: false)
     @blade_4 = @blade_smith_1.blades.create!(model: "Skinner", length: 170, blade_material: "High Carbon Steel", handle_material: "Figured Maple", available: false)
   end
-  it 'displays the model of each blade and attributes' do
+  it 'displays the models of each blade and attributes' do
     visit "/blade_smiths/#{@blade_smith_1.id}/blades"
-    save_and_open_page
+    # save_and_open_page
+
+    expect(page).to have_content(@blade_1.model)
+    expect(page).to have_content(@blade_1.length)
+    expect(page).to have_content(@blade_1.blade_material)
+    expect(page).to have_content(@blade_1.handle_material)
+    expect(page).to have_content(@blade_1.available)
+    expect(page).to have_content(@blade_1.id)
+    expect(page).to have_content(@blade_1.created_at)
+    expect(page).to have_content(@blade_1.updated_at)
   end
 end
