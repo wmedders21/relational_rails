@@ -25,6 +25,13 @@ RSpec.describe 'blade smiths index page', type: :feature do
     expect(blade_smith_3.name).to appear_before(blade_smith_2.name)
     expect(blade_smith_2.name).to appear_before(blade_smith_1.name)
   end
+
+  it 'has a link to the Blades index at the top' do
+    blade_smith_1 = BladeSmith.create!(name: "Willy White", state: "KY", avg_yearly_output: 324, hand_forger: true)
+    visit "/blade_smiths"
+    save_and_open_page
+    expect(page).to have_link(nil, href: '/blades')
+  end
 end
 
 RSpec.describe 'blade smiths show page', type: :feature do
@@ -70,7 +77,6 @@ RSpec.describe 'blade smiths show page', type: :feature do
 
   it 'has a link to the Blades index at the top' do
     visit "/blade_smiths/#{@blade_smith_1.id}"
-    save_and_open_page
     expect(page).to have_link(nil, href: '/blades')
     visit "/blade_smiths/#{@blade_smith_2.id}"
     expect(page).to have_link(nil, href: '/blades')
