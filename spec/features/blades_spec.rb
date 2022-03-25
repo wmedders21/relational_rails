@@ -50,7 +50,6 @@ RSpec.describe 'blades' do
 
     it 'has a link to the Blades index at the top' do
       visit "/blades"
-      save_and_open_page
       expect(page).to have_link(nil, href: '/blades')
     end
   end
@@ -67,6 +66,12 @@ RSpec.describe 'blades' do
       expect(page).to have_content(@blade_1.id)
       expect(page).to have_content(@blade_1.created_at)
       expect(page).to have_content(@blade_1.updated_at)
+    end
+
+    it 'has a link to the Blades index at the top' do
+      visit "/blades/#{@blade_1.id}"
+      save_and_open_page
+      expect(page).to have_link(nil, href: '/blades')
     end
   end
 end
