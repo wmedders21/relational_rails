@@ -262,11 +262,11 @@
           1,
           null,
           1,
-          1,
+          2,
           null,
           null,
           1,
-          1,
+          9,
           null,
           null
         ]
@@ -274,6 +274,26 @@
       "/Users/willmedders/turing/2mod/projects/relational_rails/app/models/application_record.rb": {
         "lines": [
           1,
+          1,
+          null
+        ]
+      },
+      "/Users/willmedders/turing/2mod/projects/relational_rails/app/controllers/blade_smiths_controller.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          2,
+          null,
+          null,
+          1,
+          5,
+          null,
+          null
+        ]
+      },
+      "/Users/willmedders/turing/2mod/projects/relational_rails/app/controllers/application_controller.rb": {
+        "lines": [
           1,
           null
         ]
@@ -286,6 +306,6 @@
         ]
       }
     },
-    "timestamp": 1648165768
+    "timestamp": 1648167355
   }
 }
