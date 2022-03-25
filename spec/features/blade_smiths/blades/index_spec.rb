@@ -10,8 +10,6 @@ RSpec.describe 'blade_smiths blades index page', type: :feature do
   end
   it 'displays the models of each blade and attributes' do
     visit "/blade_smiths/#{@blade_smith_1.id}/blades"
-    # save_and_open_page
-
     expect(page).to have_content(@blade_1.model)
     expect(page).to have_content(@blade_1.length)
     expect(page).to have_content(@blade_1.blade_material)
@@ -20,5 +18,11 @@ RSpec.describe 'blade_smiths blades index page', type: :feature do
     expect(page).to have_content(@blade_1.id)
     expect(page).to have_content(@blade_1.created_at)
     expect(page).to have_content(@blade_1.updated_at)
+  end
+
+  it 'has a link to the Blades index at the top' do
+    visit "/blade_smiths/#{@blade_smith_1.id}/blades"
+    save_and_open_page
+    expect(page).to have_link(nil, href: '/blades')
   end
 end
