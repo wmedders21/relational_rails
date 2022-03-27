@@ -34,7 +34,7 @@ RSpec.describe 'blade smiths index page', type: :feature do
 
   it 'has a link to the BladeSmiths index at the top' do
     visit "/blade_smiths"
-    expect(page).to have_link(nil, href: '/blades_smiths')
+    expect(page).to have_link(nil, href: '/blade_smiths')
   end
 end
 
@@ -92,12 +92,12 @@ RSpec.describe 'blade smiths show page', type: :feature do
 
   it 'has a link to the BladeSmiths index at the top' do
     visit "/blade_smiths/#{@blade_smith_1.id}"
-    expect(page).to have_link(nil, href: '/blades_smiths')
+    expect(page).to have_link(nil, href: '/blade_smiths')
     visit "/blade_smiths/#{@blade_smith_2.id}"
-    expect(page).to have_link(nil, href: '/blades_smiths')
+    expect(page).to have_link(nil, href: '/blade_smiths')
     visit "/blade_smiths/#{@blade_smith_3.id}"
-    expect(page).to have_link(nil, href: '/blades_smiths')
+    expect(page).to have_link(nil, href: '/blade_smiths')
     visit "/blade_smiths/#{@blade_smith_4.id}"
-    expect(page).to have_link(nil, href: '/blades_smiths')
+    expect(page).to have_link(nil, href: '/blade_smiths')
   end
 end
