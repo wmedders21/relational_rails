@@ -9,10 +9,10 @@ RSpec.describe 'blade smiths update page', type: :feature do
     expect(current_path).to eq("/blade_smiths/#{@blade_smith.id}/edit")
   end
 
-  xit 'can update an existing bladesmith' do
+  it 'can update an existing bladesmith' do
     visit "/blade_smiths/#{@blade_smith.id}/edit"
     fill_in('Avg yearly output', with: 13009)
-    click_button('Create Bladesmith')
+    click_button('Update Bladesmith')
 
     expect(current_path).to eq("/blade_smiths/#{@blade_smith.id}")
     expect(page).to have_content(13009)

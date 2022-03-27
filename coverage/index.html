@@ -14,7 +14,7 @@
       <img src="./assets/0.12.3/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" class="hide">
-      <div class="timestamp">Generated <abbr class="timeago" title="2022-03-27T18:10:16-04:00">2022-03-27T18:10:16-04:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2022-03-27T18:25:51-04:00">2022-03-27T18:25:51-04:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -23,14 +23,14 @@
     <span class="group_name">All Files</span>
     (<span class="covered_percent">
       <span class="green">
-  97.81%
+  97.82%
 </span>
 
      </span>
      covered at
      <span class="covered_strength">
        <span class="green">
-         1.41
+         1.42
        </span>
     </span> hits/line
     )
@@ -43,11 +43,11 @@
   </div>
 
   <div class="t-line-summary">
-    <b>228</b> relevant lines,
-    <span class="green"><b>223</b> lines covered</span> and
+    <b>229</b> relevant lines,
+    <span class="green"><b>224</b> lines covered</span> and
     <span class="red"><b>5</b> lines missed. </span>
     (<span class="green">
-  97.81%
+  97.82%
 </span>
 )
   </div>
@@ -95,11 +95,11 @@
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#6df7a2df1f2460be3910a61f83e0b8797707545b" class="src_link" title="app/controllers/blade_smiths_controller.rb">app/controllers/blade_smiths_controller.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">25</td>
-            <td class="cell--number">12</td>
-            <td class="cell--number">12</td>
+            <td class="cell--number">26</td>
+            <td class="cell--number">13</td>
+            <td class="cell--number">13</td>
             <td class="cell--number">0</td>
-            <td class="cell--number">2.83</td>
+            <td class="cell--number">2.77</td>
             
           </tr>
         
@@ -341,7 +341,7 @@
             <td class="cell--number">13</td>
             <td class="cell--number">8</td>
             <td class="cell--number">5</td>
-            <td class="cell--number">0.62</td>
+            <td class="cell--number">0.69</td>
             
           </tr>
         
@@ -559,8 +559,8 @@
     
 
     <div class="t-line-summary">
-      <b>12</b> relevant lines.
-      <span class="green"><b>12</b> lines covered</span> and
+      <b>13</b> relevant lines.
+      <span class="green"><b>13</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
 
@@ -781,13 +781,13 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="20">
-            
-            
-
+          <li class="covered" data-hits="2" data-linenumber="20">
+            <span class="hits">2</span>
             
 
-            <code class="ruby">  end</code>
+            
+
+            <code class="ruby">    @blade_smith = Bladesmith.find(params[:id])</code>
           </li>
         </div>
       
@@ -798,18 +798,18 @@
 
             
 
-            <code class="ruby"></code>
+            <code class="ruby">  end</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="22">
-            <span class="hits">1</span>
+          <li class="never" data-hits="" data-linenumber="22">
+            
             
 
             
 
-            <code class="ruby">  def blade_smith_params</code>
+            <code class="ruby"></code>
           </li>
         </div>
       
@@ -820,12 +820,23 @@
 
             
 
+            <code class="ruby">  def blade_smith_params</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="24">
+            <span class="hits">1</span>
+            
+
+            
+
             <code class="ruby">    params.permit(:name, :state, :avg_yearly_output, :hand_forger)</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="24">
+          <li class="never" data-hits="" data-linenumber="25">
             
             
 
@@ -836,7 +847,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="25">
+          <li class="never" data-hits="" data-linenumber="26">
             
             
 
@@ -1239,7 +1250,7 @@
 
             
 
-            <code class="ruby">    self.all.sort.reverse</code>
+            <code class="ruby">    self.order(&quot;updated_at DESC&quot;)</code>
           </li>
         </div>
       
@@ -4620,8 +4631,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="5">
-            <span class="hits">1</span>
+          <li class="covered" data-hits="2" data-linenumber="5">
+            <span class="hits">2</span>
             
 
             
@@ -4664,8 +4675,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="9">
-            <span class="hits">1</span>
+          <li class="missed" data-hits="0" data-linenumber="9">
+            
             
 
             
@@ -4703,13 +4714,13 @@
 
             
 
-            <code class="ruby">  xit &#39;can update an existing bladesmith&#39; do</code>
+            <code class="ruby">  it &#39;can update an existing bladesmith&#39; do</code>
           </li>
         </div>
       
         <div>
-          <li class="missed" data-hits="0" data-linenumber="13">
-            
+          <li class="covered" data-hits="1" data-linenumber="13">
+            <span class="hits">1</span>
             
 
             
@@ -4736,7 +4747,7 @@
 
             
 
-            <code class="ruby">    click_button(&#39;Create Bladesmith&#39;)</code>
+            <code class="ruby">    click_button(&#39;Update Bladesmith&#39;)</code>
           </li>
         </div>
       

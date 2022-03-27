@@ -17,6 +17,7 @@ class BladeSmithsController < ApplicationController
   end
 
   def update
+    @blade_smith = Bladesmith.find(params[:id])
   end
 
   def blade_smith_params
