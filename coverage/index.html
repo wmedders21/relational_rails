@@ -14,7 +14,7 @@
       <img src="./assets/0.12.3/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" class="hide">
-      <div class="timestamp">Generated <abbr class="timeago" title="2022-03-27T17:46:03-04:00">2022-03-27T17:46:03-04:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2022-03-27T17:50:46-04:00">2022-03-27T17:50:46-04:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -23,14 +23,14 @@
     <span class="group_name">All Files</span>
     (<span class="covered_percent">
       <span class="green">
-  100.0%
+  95.63%
 </span>
 
      </span>
      covered at
      <span class="covered_strength">
        <span class="green">
-         1.47
+         1.39
        </span>
     </span> hits/line
     )
@@ -39,15 +39,15 @@
   <a name="AllFiles"></a>
 
   <div>
-    <b>27</b> files in total.
+    <b>28</b> files in total.
   </div>
 
   <div class="t-line-summary">
-    <b>212</b> relevant lines,
-    <span class="green"><b>212</b> lines covered</span> and
-    <span class="red"><b>0</b> lines missed. </span>
+    <b>229</b> relevant lines,
+    <span class="green"><b>219</b> lines covered</span> and
+    <span class="red"><b>10</b> lines missed. </span>
     (<span class="green">
-  100.0%
+  95.63%
 </span>
 )
   </div>
@@ -326,11 +326,22 @@
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#fc14e29ba6c980cffe66c75b72684b0526443bb2" class="src_link" title="spec/features/blade_smiths/new_spec.rb">spec/features/blade_smiths/new_spec.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">47</td>
+            <td class="cell--number">21</td>
             <td class="cell--number">15</td>
             <td class="cell--number">15</td>
             <td class="cell--number">0</td>
             <td class="cell--number">1.00</td>
+            
+          </tr>
+        
+          <tr class="t-file">
+            <td class="strong t-file__name"><a href="#77af216e3a50b38caddf60bba923696f6ef1224a" class="src_link" title="spec/features/blade_smiths/update_spec.rb">spec/features/blade_smiths/update_spec.rb</a></td>
+            <td class="red strong cell--number t-file__coverage">41.18 %</td>
+            <td class="cell--number">24</td>
+            <td class="cell--number">17</td>
+            <td class="cell--number">7</td>
+            <td class="cell--number">10</td>
+            <td class="cell--number">0.41</td>
             
           </tr>
         
@@ -4452,18 +4463,280 @@
 
             
 
-            <code class="ruby">  # xit &#39;displays blade smiths in order most recently created&#39; do</code>
+            <code class="ruby">end</code>
+          </li>
+        </div>
+      
+    </ol>
+  </pre>
+</div>
+
+      
+        <div class="source_table" id="77af216e3a50b38caddf60bba923696f6ef1224a">
+  <div class="header">
+    <h3>spec/features/blade_smiths/update_spec.rb</h3>
+    <h4>
+      <span class="red">
+  41.18%
+</span>
+
+      lines covered
+    </h4>
+
+    
+
+    <div class="t-line-summary">
+      <b>17</b> relevant lines.
+      <span class="green"><b>7</b> lines covered</span> and
+      <span class="red"><b>10</b> lines missed.</span>
+    </div>
+
+    
+
+  </div>
+
+  <pre>
+    <ol>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="1">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">require &#39;rails_helper&#39;</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="22">
+          <li class="never" data-hits="" data-linenumber="2">
             
             
 
             
 
-            <code class="ruby">  #   blade_smith_1 = BladeSmith.create!(name: &quot;Willy White&quot;, state: &quot;KY&quot;, avg_yearly_output: 324, hand_forger: true)</code>
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="3">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">RSpec.describe &#39;blade smiths update page&#39;, type: :feature do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="4">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  before :each do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="5">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    @blade_smith = BladeSmith.create!(name: &quot;Willy White&quot;, state: &quot;KY&quot;, avg_yearly_output: 324, hand_forger: true)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="6">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="7">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  it &#39;exists&#39; do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="8">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    visit &quot;/blade_smiths/#{@blade_smith.id}/edit&quot;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="9">
+            
+            
+
+            
+
+            <code class="ruby">    expect(current_path).to eq(&quot;/blade_smiths/#{@blade_smith.id}/edit&quot;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="10">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="11">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="12">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  xit &#39;can create a new bladesmith&#39; do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="13">
+            
+            
+
+            
+
+            <code class="ruby">    visit &#39;blade_smiths/new&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="14">
+            
+            
+
+            
+
+            <code class="ruby">    fill_in(&#39;Name&#39;, with: &#39;Cold Steel&#39;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="15">
+            
+            
+
+            
+
+            <code class="ruby">    fill_in(&#39;State&#39;, with: &#39;TX&#39;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="16">
+            
+            
+
+            
+
+            <code class="ruby">    fill_in(&#39;Avg yearly output&#39;, with: 13009)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="17">
+            
+            
+
+            
+
+            <code class="ruby">    fill_in(&#39;Hand forger&#39;, with: false)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="18">
+            
+            
+
+            
+
+            <code class="ruby">    click_button(&#39;Create Bladesmith&#39;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="19">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="20">
+            
+            
+
+            
+
+            <code class="ruby">    new_blade_smith_id = BladeSmith.last.id</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="21">
+            
+            
+
+            
+
+            <code class="ruby">    expect(current_path).to eq(&quot;/blade_smiths/#{new_blade_smith_id}&quot;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="22">
+            
+            
+
+            
+
+            <code class="ruby">    expect(page).to have_content(&quot;Cold Steel&quot;)</code>
           </li>
         </div>
       
@@ -4474,265 +4747,12 @@
 
             
 
-            <code class="ruby">  #   blade_smith_2 = BladeSmith.create!(name: &quot;Bill Scagel&quot;, state: &quot;MI&quot;, avg_yearly_output: 104, hand_forger: true)</code>
+            <code class="ruby">  end</code>
           </li>
         </div>
       
         <div>
           <li class="never" data-hits="" data-linenumber="24">
-            
-            
-
-            
-
-            <code class="ruby">  #   blade_smith_3 = BladeSmith.create!(name: &quot;Randall Made Knives&quot;, state: &quot;FL&quot;, avg_yearly_output: 2043, hand_forger: true)</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="25">
-            
-            
-
-            
-
-            <code class="ruby">  #   blade_smith_4 = BladeSmith.create!(name: &quot;Ka-Bar Knives, Inc.&quot;, state: &quot;NY&quot;, avg_yearly_output: 15465, hand_forger: false)</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="26">
-            
-            
-
-            
-
-            <code class="ruby">  #   visit &#39;/blade_smiths&#39;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="27">
-            
-            
-
-            
-
-            <code class="ruby">  #   expect(blade_smith_4.name).to appear_before(blade_smith_3.name)</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="28">
-            
-            
-
-            
-
-            <code class="ruby">  #   expect(blade_smith_3.name).to appear_before(blade_smith_2.name)</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="29">
-            
-            
-
-            
-
-            <code class="ruby">  #   expect(blade_smith_2.name).to appear_before(blade_smith_1.name)</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="30">
-            
-            
-
-            
-
-            <code class="ruby">  # end</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="31">
-            
-            
-
-            
-
-            <code class="ruby">  #</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="32">
-            
-            
-
-            
-
-            <code class="ruby">  # xit &#39;has a link to the Blades index at the top&#39; do</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="33">
-            
-            
-
-            
-
-            <code class="ruby">  #   blade_smith_1 = BladeSmith.create!(name: &quot;Willy White&quot;, state: &quot;KY&quot;, avg_yearly_output: 324, hand_forger: true)</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="34">
-            
-            
-
-            
-
-            <code class="ruby">  #   visit &quot;/blade_smiths&quot;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="35">
-            
-            
-
-            
-
-            <code class="ruby">  #   expect(page).to have_link(nil, href: &#39;/blades&#39;)</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="36">
-            
-            
-
-            
-
-            <code class="ruby">  # end</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="37">
-            
-            
-
-            
-
-            <code class="ruby">  #</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="38">
-            
-            
-
-            
-
-            <code class="ruby">  # xit &#39;has a link to the BladeSmiths index at the top&#39; do</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="39">
-            
-            
-
-            
-
-            <code class="ruby">  #   visit &quot;/blade_smiths&quot;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="40">
-            
-            
-
-            
-
-            <code class="ruby">  #   expect(page).to have_link(nil, href: &#39;/blade_smiths&#39;)</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="41">
-            
-            
-
-            
-
-            <code class="ruby">  # end</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="42">
-            
-            
-
-            
-
-            <code class="ruby">  #</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="43">
-            
-            
-
-            
-
-            <code class="ruby">  # xit &#39;has a link to BladeSmiths new&#39; do</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="44">
-            
-            
-
-            
-
-            <code class="ruby">  #   visit &quot;/blade_smiths&quot;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="45">
-            
-            
-
-            
-
-            <code class="ruby">  #   expect(page).to have_link(nil, href: &#39;/blade_smiths/new&#39;)</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="46">
-            
-            
-
-            
-
-            <code class="ruby">  # end</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="47">
             
             
 

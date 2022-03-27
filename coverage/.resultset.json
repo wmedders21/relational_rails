@@ -317,31 +317,33 @@
           1,
           1,
           null,
+          null
+        ]
+      },
+      "/Users/willmedders/turing/2mod/projects/relational_rails/spec/features/blade_smiths/update_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          0,
           null,
           null,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
           null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
+          0,
+          0,
+          0,
           null,
           null
         ]
@@ -563,6 +565,6 @@
         ]
       }
     },
-    "timestamp": 1648417563
+    "timestamp": 1648417846
   }
 }
