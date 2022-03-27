@@ -1,4 +1,5 @@
-<a href="/blades">Blades Index</a>
+<%= link_to "Bladesmiths Index", "/blades_smiths" %><br>
+<%= link_to "Blades Index", "/blades" %>
 
 <% @blades.each do |blade| %>
   <h1><%= blade.model %></h1>
