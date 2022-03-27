@@ -7,4 +7,8 @@ class BladeSmithsController < ApplicationController
   def show
     @blade_smith = BladeSmith.find(params[:id])
   end
+
+  def new
+
+  end
 end
