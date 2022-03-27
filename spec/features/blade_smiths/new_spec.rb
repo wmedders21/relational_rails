@@ -6,6 +6,16 @@ RSpec.describe 'blade smiths new page', type: :feature do
     expect(current_path).to eq('/blade_smiths/new')
   end
 
+  it 'can create a new bladesmith' do
+    visit 'blade_smiths/new'
+
+    fill_in('Name', with: "Cold Steel")
+    click_button('Create Bladesmith')
+
+    new_blade_smith_id = BladeSmith.last.id
+    expect(current_path).to eq("/blade_smiths/#{new_blade_smith_id}")
+    expect(page).to have_content("Cold Steel")
+  end
   # xit 'displays blade smiths in order most recently created' do
   #   blade_smith_1 = BladeSmith.create!(name: "Willy White", state: "KY", avg_yearly_output: 324, hand_forger: true)
   #   blade_smith_2 = BladeSmith.create!(name: "Bill Scagel", state: "MI", avg_yearly_output: 104, hand_forger: true)
