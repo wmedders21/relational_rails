@@ -31,6 +31,11 @@ RSpec.describe 'blade smiths index page', type: :feature do
     visit "/blade_smiths"
     expect(page).to have_link(nil, href: '/blades')
   end
+
+  it 'has a link to the BladeSmiths index at the top' do
+    visit "/blade_smiths"
+    expect(page).to have_link(nil, href: '/blades_smiths')
+  end
 end
 
 RSpec.describe 'blade smiths show page', type: :feature do

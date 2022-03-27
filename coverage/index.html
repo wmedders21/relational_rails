@@ -14,7 +14,7 @@
       <img src="./assets/0.12.3/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" class="hide">
-      <div class="timestamp">Generated <abbr class="timeago" title="2022-03-27T15:00:36-04:00">2022-03-27T15:00:36-04:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2022-03-27T15:02:37-04:00">2022-03-27T15:02:37-04:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -30,7 +30,7 @@
      covered at
      <span class="covered_strength">
        <span class="green">
-         1.35
+         1.36
        </span>
     </span> hits/line
     )
@@ -43,8 +43,8 @@
   </div>
 
   <div class="t-line-summary">
-    <b>222</b> relevant lines,
-    <span class="green"><b>222</b> lines covered</span> and
+    <b>225</b> relevant lines,
+    <span class="green"><b>225</b> lines covered</span> and
     <span class="red"><b>0</b> lines missed. </span>
     (<span class="green">
   100.0%
@@ -99,7 +99,7 @@
             <td class="cell--number">5</td>
             <td class="cell--number">5</td>
             <td class="cell--number">0</td>
-            <td class="cell--number">3.00</td>
+            <td class="cell--number">3.20</td>
             
           </tr>
         
@@ -154,7 +154,7 @@
             <td class="cell--number">6</td>
             <td class="cell--number">6</td>
             <td class="cell--number">0</td>
-            <td class="cell--number">3.67</td>
+            <td class="cell--number">3.83</td>
             
           </tr>
         
@@ -315,11 +315,11 @@
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#46f35b216192cbe594fdb105b097544b86479977" class="src_link" title="spec/features/blade_smiths_spec.rb">spec/features/blade_smiths_spec.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">87</td>
-            <td class="cell--number">68</td>
-            <td class="cell--number">68</td>
+            <td class="cell--number">92</td>
+            <td class="cell--number">71</td>
+            <td class="cell--number">71</td>
             <td class="cell--number">0</td>
-            <td class="cell--number">1.41</td>
+            <td class="cell--number">1.39</td>
             
           </tr>
         
@@ -583,8 +583,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="3" data-linenumber="4">
-            <span class="hits">3</span>
+          <li class="covered" data-hits="4" data-linenumber="4">
+            <span class="hits">4</span>
             
 
             
@@ -1046,8 +1046,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="4" data-linenumber="5">
-            <span class="hits">4</span>
+          <li class="covered" data-hits="5" data-linenumber="5">
+            <span class="hits">5</span>
             
 
             
@@ -3698,8 +3698,8 @@
     
 
     <div class="t-line-summary">
-      <b>68</b> relevant lines.
-      <span class="green"><b>68</b> lines covered</span> and
+      <b>71</b> relevant lines.
+      <span class="green"><b>71</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
 
@@ -4080,18 +4080,18 @@
 
             
 
-            <code class="ruby">end</code>
+            <code class="ruby"></code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="35">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="35">
+            <span class="hits">1</span>
             
 
-            <code class="ruby"></code>
+            
+
+            <code class="ruby">  it &#39;has a link to the BladeSmiths index at the top&#39; do</code>
           </li>
         </div>
       
@@ -4102,7 +4102,7 @@
 
             
 
-            <code class="ruby">RSpec.describe &#39;blade smiths show page&#39;, type: :feature do</code>
+            <code class="ruby">    visit &quot;/blade_smiths&quot;</code>
           </li>
         </div>
       
@@ -4113,62 +4113,62 @@
 
             
 
+            <code class="ruby">    expect(page).to have_link(nil, href: &#39;/blades_smiths&#39;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="38">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="39">
+            
+            
+
+            
+
+            <code class="ruby">end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="40">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="41">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">RSpec.describe &#39;blade smiths show page&#39;, type: :feature do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="42">
+            <span class="hits">1</span>
+            
+
+            
+
             <code class="ruby">  before :each do</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="3" data-linenumber="38">
-            <span class="hits">3</span>
-            
-
-            
-
-            <code class="ruby">    @blade_smith_1 = BladeSmith.create!(name: &quot;Willy White&quot;, state: &quot;KY&quot;, avg_yearly_output: 324, hand_forger: true)</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="3" data-linenumber="39">
-            <span class="hits">3</span>
-            
-
-            
-
-            <code class="ruby">    @blade_smith_2 = BladeSmith.create!(name: &quot;Bill Scagel&quot;, state: &quot;MI&quot;, avg_yearly_output: 104, hand_forger: true)</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="3" data-linenumber="40">
-            <span class="hits">3</span>
-            
-
-            
-
-            <code class="ruby">    @blade_smith_3 = BladeSmith.create!(name: &quot;Randall Made Knives&quot;, state: &quot;FL&quot;, avg_yearly_output: 2043, hand_forger: true)</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="3" data-linenumber="41">
-            <span class="hits">3</span>
-            
-
-            
-
-            <code class="ruby">    @blade_smith_4 = BladeSmith.create!(name: &quot;Ka-Bar Knives, Inc.&quot;, state: &quot;NY&quot;, avg_yearly_output: 15465, hand_forger: false)</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="3" data-linenumber="42">
-            <span class="hits">3</span>
-            
-
-            
-
-            <code class="ruby">    @blade_1 = @blade_smith_1.blades.create!(model: &quot;Patch Knife&quot;, length: 135, blade_material: &quot;Damascus&quot;, handle_material: &quot;Walnut&quot;, available: true)</code>
           </li>
         </div>
       
@@ -4179,7 +4179,7 @@
 
             
 
-            <code class="ruby">    @blade_2 = @blade_smith_2.blades.create!(model: &quot;Fighting Knife&quot;, length: 240, blade_material: &quot;Tool Steel&quot;, handle_material: &quot;Stacked Leather&quot;, available: false)</code>
+            <code class="ruby">    @blade_smith_1 = BladeSmith.create!(name: &quot;Willy White&quot;, state: &quot;KY&quot;, avg_yearly_output: 324, hand_forger: true)</code>
           </li>
         </div>
       
@@ -4190,7 +4190,7 @@
 
             
 
-            <code class="ruby">    @blade_3 = @blade_smith_2.blades.create!(model: &quot;Diving Knife&quot;, length: 190, blade_material: &quot;Stainless&quot;, handle_material: &quot;Micarta&quot;, available: true)</code>
+            <code class="ruby">    @blade_smith_2 = BladeSmith.create!(name: &quot;Bill Scagel&quot;, state: &quot;MI&quot;, avg_yearly_output: 104, hand_forger: true)</code>
           </li>
         </div>
       
@@ -4201,7 +4201,7 @@
 
             
 
-            <code class="ruby">    @blade_4 = @blade_smith_3.blades.create!(model: &quot;Skinner&quot;, length: 170, blade_material: &quot;High Carbon Steel&quot;, handle_material: &quot;Figured Maple&quot;, available: false)</code>
+            <code class="ruby">    @blade_smith_3 = BladeSmith.create!(name: &quot;Randall Made Knives&quot;, state: &quot;FL&quot;, avg_yearly_output: 2043, hand_forger: true)</code>
           </li>
         </div>
       
@@ -4212,7 +4212,7 @@
 
             
 
-            <code class="ruby">    @blade_5 = @blade_smith_3.blades.create!(model: &quot;Throwing Knife&quot;, length: 155, blade_material: &quot;High Carbon Steel&quot;, handle_material: &quot;High Carbon Steel&quot;, available: false)</code>
+            <code class="ruby">    @blade_smith_4 = BladeSmith.create!(name: &quot;Ka-Bar Knives, Inc.&quot;, state: &quot;NY&quot;, avg_yearly_output: 15465, hand_forger: false)</code>
           </li>
         </div>
       
@@ -4223,7 +4223,7 @@
 
             
 
-            <code class="ruby">    @blade_6 = @blade_smith_3.blades.create!(model: &quot;Stiletto&quot;, length: 200, blade_material: &quot;High Carbon Steel&quot;, handle_material: &quot;Walnut&quot;, available: false)</code>
+            <code class="ruby">    @blade_1 = @blade_smith_1.blades.create!(model: &quot;Patch Knife&quot;, length: 135, blade_material: &quot;Damascus&quot;, handle_material: &quot;Walnut&quot;, available: true)</code>
           </li>
         </div>
       
@@ -4234,7 +4234,7 @@
 
             
 
-            <code class="ruby">    @blade_7 = @blade_smith_4.blades.create!(model: &quot;Mini Fighter&quot;, length: 175, blade_material: &quot;Stainless&quot;, handle_material: &quot;Stacked Leather&quot;, available: false)</code>
+            <code class="ruby">    @blade_2 = @blade_smith_2.blades.create!(model: &quot;Fighting Knife&quot;, length: 240, blade_material: &quot;Tool Steel&quot;, handle_material: &quot;Stacked Leather&quot;, available: false)</code>
           </li>
         </div>
       
@@ -4245,7 +4245,7 @@
 
             
 
-            <code class="ruby">    @blade_8 = @blade_smith_4.blades.create!(model: &quot;Hunter&quot;, length: 200, blade_material: &quot;Tool Steel&quot;, handle_material: &quot;Composite&quot;, available: true)</code>
+            <code class="ruby">    @blade_3 = @blade_smith_2.blades.create!(model: &quot;Diving Knife&quot;, length: 190, blade_material: &quot;Stainless&quot;, handle_material: &quot;Micarta&quot;, available: true)</code>
           </li>
         </div>
       
@@ -4256,7 +4256,7 @@
 
             
 
-            <code class="ruby">    @blade_9 = @blade_smith_4.blades.create!(model: &quot;Letter Opener&quot;, length: 170, blade_material: &quot;High Carbon Steel&quot;, handle_material: &quot;Ebony&quot;, available: false)</code>
+            <code class="ruby">    @blade_4 = @blade_smith_3.blades.create!(model: &quot;Skinner&quot;, length: 170, blade_material: &quot;High Carbon Steel&quot;, handle_material: &quot;Figured Maple&quot;, available: false)</code>
           </li>
         </div>
       
@@ -4267,12 +4267,67 @@
 
             
 
+            <code class="ruby">    @blade_5 = @blade_smith_3.blades.create!(model: &quot;Throwing Knife&quot;, length: 155, blade_material: &quot;High Carbon Steel&quot;, handle_material: &quot;High Carbon Steel&quot;, available: false)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="3" data-linenumber="52">
+            <span class="hits">3</span>
+            
+
+            
+
+            <code class="ruby">    @blade_6 = @blade_smith_3.blades.create!(model: &quot;Stiletto&quot;, length: 200, blade_material: &quot;High Carbon Steel&quot;, handle_material: &quot;Walnut&quot;, available: false)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="3" data-linenumber="53">
+            <span class="hits">3</span>
+            
+
+            
+
+            <code class="ruby">    @blade_7 = @blade_smith_4.blades.create!(model: &quot;Mini Fighter&quot;, length: 175, blade_material: &quot;Stainless&quot;, handle_material: &quot;Stacked Leather&quot;, available: false)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="3" data-linenumber="54">
+            <span class="hits">3</span>
+            
+
+            
+
+            <code class="ruby">    @blade_8 = @blade_smith_4.blades.create!(model: &quot;Hunter&quot;, length: 200, blade_material: &quot;Tool Steel&quot;, handle_material: &quot;Composite&quot;, available: true)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="3" data-linenumber="55">
+            <span class="hits">3</span>
+            
+
+            
+
+            <code class="ruby">    @blade_9 = @blade_smith_4.blades.create!(model: &quot;Letter Opener&quot;, length: 170, blade_material: &quot;High Carbon Steel&quot;, handle_material: &quot;Ebony&quot;, available: false)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="3" data-linenumber="56">
+            <span class="hits">3</span>
+            
+
+            
+
             <code class="ruby">    @blade_10 = @blade_smith_4.blades.create!(model: &quot;U.S.M.C.&quot;, length: 301, blade_material: &quot;High Carbon Steel&quot;, handle_material: &quot;Stacked Leather&quot;, available: false)</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="52">
+          <li class="never" data-hits="" data-linenumber="57">
             
             
 
@@ -4283,68 +4338,13 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="53">
+          <li class="never" data-hits="" data-linenumber="58">
             
             
 
             
 
             <code class="ruby"></code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="54">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">  it &#39;displays the blade smith with corresponding id with all attributes&#39; do</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="55">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    visit &quot;/blade_smiths/#{@blade_smith_1.id}&quot;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="56">
-            
-            
-
-            
-
-            <code class="ruby">    # save_and_open_page</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="57">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    expect(page).to have_content(@blade_smith_1.name)</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="58">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    expect(page).to have_content(@blade_smith_1.state)</code>
           </li>
         </div>
       
@@ -4355,7 +4355,7 @@
 
             
 
-            <code class="ruby">    expect(page).to have_content(@blade_smith_1.avg_yearly_output)</code>
+            <code class="ruby">  it &#39;displays the blade smith with corresponding id with all attributes&#39; do</code>
           </li>
         </div>
       
@@ -4366,18 +4366,18 @@
 
             
 
-            <code class="ruby">    expect(page).to have_content(@blade_smith_1.hand_forger)</code>
+            <code class="ruby">    visit &quot;/blade_smiths/#{@blade_smith_1.id}&quot;</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="61">
-            <span class="hits">1</span>
+          <li class="never" data-hits="" data-linenumber="61">
+            
             
 
             
 
-            <code class="ruby">    expect(page).to have_content(@blade_smith_1.created_at)</code>
+            <code class="ruby">    # save_and_open_page</code>
           </li>
         </div>
       
@@ -4388,7 +4388,7 @@
 
             
 
-            <code class="ruby">    expect(page).to have_content(@blade_smith_1.updated_at)</code>
+            <code class="ruby">    expect(page).to have_content(@blade_smith_1.name)</code>
           </li>
         </div>
       
@@ -4399,29 +4399,29 @@
 
             
 
-            <code class="ruby">    expect(page).to have_content(@blade_smith_1.id)</code>
+            <code class="ruby">    expect(page).to have_content(@blade_smith_1.state)</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="64">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="64">
+            <span class="hits">1</span>
             
 
-            <code class="ruby">  end</code>
+            
+
+            <code class="ruby">    expect(page).to have_content(@blade_smith_1.avg_yearly_output)</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="65">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="65">
+            <span class="hits">1</span>
             
 
-            <code class="ruby"></code>
+            
+
+            <code class="ruby">    expect(page).to have_content(@blade_smith_1.hand_forger)</code>
           </li>
         </div>
       
@@ -4432,7 +4432,7 @@
 
             
 
-            <code class="ruby">  it &#39;displays the number of Blades associated with each BladeSmith&#39; do</code>
+            <code class="ruby">    expect(page).to have_content(@blade_smith_1.created_at)</code>
           </li>
         </div>
       
@@ -4443,7 +4443,7 @@
 
             
 
-            <code class="ruby">    visit &quot;/blade_smiths/#{@blade_smith_1.id}&quot;</code>
+            <code class="ruby">    expect(page).to have_content(@blade_smith_1.updated_at)</code>
           </li>
         </div>
       
@@ -4454,78 +4454,12 @@
 
             
 
-            <code class="ruby">    expect(page).to have_content(@blade_smith_1.model_count)</code>
+            <code class="ruby">    expect(page).to have_content(@blade_smith_1.id)</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="69">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    visit &quot;/blade_smiths/#{@blade_smith_2.id}&quot;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="70">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    expect(page).to have_content(@blade_smith_2.model_count)</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="71">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    visit &quot;/blade_smiths/#{@blade_smith_3.id}&quot;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="72">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    expect(page).to have_content(@blade_smith_3.model_count)</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="73">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    visit &quot;/blade_smiths/#{@blade_smith_4.id}&quot;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="74">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    expect(page).to have_content(@blade_smith_4.model_count)</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="75">
+          <li class="never" data-hits="" data-linenumber="69">
             
             
 
@@ -4536,7 +4470,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="76">
+          <li class="never" data-hits="" data-linenumber="70">
             
             
 
@@ -4547,18 +4481,18 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="77">
+          <li class="covered" data-hits="1" data-linenumber="71">
             <span class="hits">1</span>
             
 
             
 
-            <code class="ruby">  it &#39;has a link to the Blades index at the top&#39; do</code>
+            <code class="ruby">  it &#39;displays the number of Blades associated with each BladeSmith&#39; do</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="78">
+          <li class="covered" data-hits="1" data-linenumber="72">
             <span class="hits">1</span>
             
 
@@ -4569,18 +4503,18 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="79">
+          <li class="covered" data-hits="1" data-linenumber="73">
             <span class="hits">1</span>
             
 
             
 
-            <code class="ruby">    expect(page).to have_link(nil, href: &#39;/blades&#39;)</code>
+            <code class="ruby">    expect(page).to have_content(@blade_smith_1.model_count)</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="80">
+          <li class="covered" data-hits="1" data-linenumber="74">
             <span class="hits">1</span>
             
 
@@ -4591,18 +4525,18 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="81">
+          <li class="covered" data-hits="1" data-linenumber="75">
             <span class="hits">1</span>
             
 
             
 
-            <code class="ruby">    expect(page).to have_link(nil, href: &#39;/blades&#39;)</code>
+            <code class="ruby">    expect(page).to have_content(@blade_smith_2.model_count)</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="82">
+          <li class="covered" data-hits="1" data-linenumber="76">
             <span class="hits">1</span>
             
 
@@ -4613,18 +4547,18 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="83">
+          <li class="covered" data-hits="1" data-linenumber="77">
             <span class="hits">1</span>
             
 
             
 
-            <code class="ruby">    expect(page).to have_link(nil, href: &#39;/blades&#39;)</code>
+            <code class="ruby">    expect(page).to have_content(@blade_smith_3.model_count)</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="84">
+          <li class="covered" data-hits="1" data-linenumber="78">
             <span class="hits">1</span>
             
 
@@ -4635,18 +4569,18 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="85">
+          <li class="covered" data-hits="1" data-linenumber="79">
             <span class="hits">1</span>
             
 
             
 
-            <code class="ruby">    expect(page).to have_link(nil, href: &#39;/blades&#39;)</code>
+            <code class="ruby">    expect(page).to have_content(@blade_smith_4.model_count)</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="86">
+          <li class="never" data-hits="" data-linenumber="80">
             
             
 
@@ -4657,7 +4591,128 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="87">
+          <li class="never" data-hits="" data-linenumber="81">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="82">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  it &#39;has a link to the Blades index at the top&#39; do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="83">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    visit &quot;/blade_smiths/#{@blade_smith_1.id}&quot;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="84">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    expect(page).to have_link(nil, href: &#39;/blades&#39;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="85">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    visit &quot;/blade_smiths/#{@blade_smith_2.id}&quot;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="86">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    expect(page).to have_link(nil, href: &#39;/blades&#39;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="87">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    visit &quot;/blade_smiths/#{@blade_smith_3.id}&quot;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="88">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    expect(page).to have_link(nil, href: &#39;/blades&#39;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="89">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    visit &quot;/blade_smiths/#{@blade_smith_4.id}&quot;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="90">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    expect(page).to have_link(nil, href: &#39;/blades&#39;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="91">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="92">
             
             
 
