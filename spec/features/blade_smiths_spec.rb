@@ -29,7 +29,6 @@ RSpec.describe 'blade smiths index page', type: :feature do
   it 'has a link to the Blades index at the top' do
     blade_smith_1 = BladeSmith.create!(name: "Willy White", state: "KY", avg_yearly_output: 324, hand_forger: true)
     visit "/blade_smiths"
-    save_and_open_page
     expect(page).to have_link(nil, href: '/blades')
   end
 end

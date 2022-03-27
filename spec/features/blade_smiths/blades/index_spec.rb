@@ -22,7 +22,11 @@ RSpec.describe 'blade_smiths blades index page', type: :feature do
 
   it 'has a link to the Blades index at the top' do
     visit "/blade_smiths/#{@blade_smith_1.id}/blades"
-    save_and_open_page
     expect(page).to have_link(nil, href: '/blades')
+  end
+
+  it 'has a link to the BladeSmiths index at the top' do
+    visit "/blade_smiths/#{@blade_smith_1.id}/blades"
+    expect(page).to have_link(nil, href: '/blades_smiths')
   end
 end
