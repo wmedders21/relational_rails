@@ -7,7 +7,6 @@ RSpec.describe 'blade smiths index page', type: :feature do
     blade_smith_3 = BladeSmith.create!(name: "Randall Made Knives", state: "FL", avg_yearly_output: 2043, hand_forger: true)
     blade_smith_4 = BladeSmith.create!(name: "Ka-Bar Knives, Inc.", state: "NY", avg_yearly_output: 15465, hand_forger: false)
     visit '/blade_smiths'
-    # save_and_open_page
     expect(page).to have_content(blade_smith_1.name)
     expect(page).to have_content(blade_smith_2.name)
     expect(page).to have_content(blade_smith_3.name)
@@ -20,7 +19,6 @@ RSpec.describe 'blade smiths index page', type: :feature do
     blade_smith_3 = BladeSmith.create!(name: "Randall Made Knives", state: "FL", avg_yearly_output: 2043, hand_forger: true)
     blade_smith_4 = BladeSmith.create!(name: "Ka-Bar Knives, Inc.", state: "NY", avg_yearly_output: 15465, hand_forger: false)
     visit '/blade_smiths'
-    # save_and_open_page
     expect(blade_smith_4.name).to appear_before(blade_smith_3.name)
     expect(blade_smith_3.name).to appear_before(blade_smith_2.name)
     expect(blade_smith_2.name).to appear_before(blade_smith_1.name)
@@ -35,6 +33,11 @@ RSpec.describe 'blade smiths index page', type: :feature do
   it 'has a link to the BladeSmiths index at the top' do
     visit "/blade_smiths"
     expect(page).to have_link(nil, href: '/blade_smiths')
+  end
+
+  it 'has a link to BladeSmiths new' do
+    visit "/blade_smiths"
+    expect(page).to have_link(nil, href: '/blade_smiths/new')
   end
 end
 
@@ -58,7 +61,6 @@ RSpec.describe 'blade smiths show page', type: :feature do
 
   it 'displays the blade smith with corresponding id with all attributes' do
     visit "/blade_smiths/#{@blade_smith_1.id}"
-    # save_and_open_page
     expect(page).to have_content(@blade_smith_1.name)
     expect(page).to have_content(@blade_smith_1.state)
     expect(page).to have_content(@blade_smith_1.avg_yearly_output)
