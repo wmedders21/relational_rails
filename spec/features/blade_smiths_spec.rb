@@ -38,6 +38,8 @@ RSpec.describe 'blade smiths index page', type: :feature do
   it 'has a link to BladeSmiths new' do
     visit "/blade_smiths"
     expect(page).to have_link(nil, href: '/blade_smiths/new')
+    click_link("New Bladesmith")
+    expect(current_path).to eq('/blade_smiths/new')
   end
 end
 
