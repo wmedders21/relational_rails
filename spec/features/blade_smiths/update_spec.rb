@@ -4,7 +4,7 @@ RSpec.describe 'blade smiths update page', type: :feature do
   before :each do
     @blade_smith = BladeSmith.create!(name: "Willy White", state: "KY", avg_yearly_output: 324, hand_forger: true)
   end
-  xit 'exists' do
+  it 'exists' do
     visit "/blade_smiths/#{@blade_smith.id}/edit"
     expect(current_path).to eq("/blade_smiths/#{@blade_smith.id}/edit")
   end
