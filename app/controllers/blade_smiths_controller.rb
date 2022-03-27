@@ -12,7 +12,14 @@ class BladeSmithsController < ApplicationController
   end
 
   def create
-    blade_smith = BladeSmith.create(name: params[:name], state: params[:state], avg_yearly_output: params[:avg_yearly_output], hand_forger: params[:hand_forger])
+    blade_smith = BladeSmith.create(blade_smith_params)
     redirect_to "/blade_smiths/#{blade_smith.id}"
+  end
+
+  def update
+  end
+
+  def blade_smith_params
+    params.permit(:name, :state, :avg_yearly_output, :hand_forger)
   end
 end
