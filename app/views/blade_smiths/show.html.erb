@@ -1,6 +1,6 @@
 <%= link_to "Bladesmiths Index", "/blade_smiths" %><br>
-<%= link_to "Blades Index", "/blades" %>
-<%= link_to "Bladesmith's Models", "/blade_smiths/#{@blade_smith.id}/blades" %>
+<%= link_to "Blades Index", "/blades" %><br>
+<%= link_to "Blades by #{@blade_smith.name}", "/blade_smiths/#{@blade_smith.id}/blades" %>
 
 <h1><%= @blade_smith.name %></h1>
 <p>State: <%= @blade_smith.state %></p>
