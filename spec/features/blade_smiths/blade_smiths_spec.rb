@@ -116,6 +116,7 @@ RSpec.describe 'blade smiths show page', type: :feature do
 
   it 'has a link to BladeSmiths update' do
     visit "/blade_smiths/#{@blade_smith_1.id}"
+    save_and_open_page
     expect(page).to have_link(nil, href: '/blade_smiths/update')
   end
 end
