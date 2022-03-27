@@ -6,4 +6,5 @@ Rails.application.routes.draw do
   get '/blades', to: 'blades#index'
   get '/blades/:id', to: 'blades#show'
   get '/blade_smiths/:blade_smith_id/blades', to: 'blade_smith_blades#index'
+  post '/blade_smiths', to: 'blade_smiths#create'
 end
