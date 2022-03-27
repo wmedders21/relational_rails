@@ -113,4 +113,9 @@ RSpec.describe 'blade smiths show page', type: :feature do
     visit "/blade_smiths/#{@blade_smith_4.id}"
     expect(page).to have_link(nil, href: "/blade_smiths/#{@blade_smith_4.id}/blades")
   end
+
+  it 'has a link to BladeSmiths update' do
+    visit "/blade_smiths/#{@blade_smith_1.id}"
+    expect(page).to have_link(nil, href: '/blade_smiths/update')
+  end
 end
