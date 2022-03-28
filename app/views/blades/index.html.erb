@@ -1,6 +1,7 @@
 <%= link_to "Bladesmiths Index", "/blade_smiths" %><br>
 <%= link_to "Blades Index", "/blades" %>
 
+
 <% @blades.each do |blade| %>
   <h1><%= blade.model %></h1>
   <p>Length(millimeters): <%= blade.length %></p>

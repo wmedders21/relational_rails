@@ -1,5 +1,6 @@
 <%= link_to "Bladesmiths Index", "/blade_smiths" %><br>
 <%= link_to "Blades Index", "/blades" %>
+<%= link_to "New Blade", "/blade_smiths/#{@blade_smith.id}/blades/new" %>
 
 <% @blades.each do |blade| %>
 <h1><%= blade.model %></h1>
