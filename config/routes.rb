@@ -12,4 +12,6 @@ Rails.application.routes.draw do
   patch '/blade_smiths/:id', to: 'blade_smiths#update'
   post '/blade_smiths/:blade_smith_id/blades', to: 'blade_smith_blades#create'
   get 'blades/:id/edit', to: 'blades#edit'
+  patch '/blades/:id', to: 'blades#update'
+
 end

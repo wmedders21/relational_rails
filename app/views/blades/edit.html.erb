@@ -1,0 +1,13 @@
+<%= form_with url: "/blades/#{@blade.id}", method: :patch, local: true do |form| %>
+  <%= form.label :model %><br>
+  <%= form.text_field :model %><br>
+  <%= form.label :length %><br>
+  <%= form.text_field :length %><br>
+  <%= form.label :blade_material %><br>
+  <%= form.text_field :blade_material %><br>
+  <%= form.label :handle_material %><br>
+  <%= form.text_field :handle_material %><br>
+  <%= form.label :available %><br>
+  <%= form.text_field :available %><br>
+  <%= form.submit "Update Blade" %>
+<% end %>
