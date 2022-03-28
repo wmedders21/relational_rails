@@ -11,13 +11,20 @@ class BladeSmithsController < ApplicationController
   def new
   end
 
+  def edit
+    @blade_smith = BladeSmith.find(params[:id])
+  end
+
   def create
     blade_smith = BladeSmith.create(blade_smith_params)
     redirect_to "/blade_smiths/#{blade_smith.id}"
   end
 
   def update
-    @blade_smith = Bladesmith.find(params[:id])
+    @blade_smith = BladeSmith.find(params[:id])
+    @update = @blade_smith.update(blade_smith_params)
+    redirect_to "/blade_smiths/#{@blade_smith.id}"
+
   end
 
   def blade_smith_params
