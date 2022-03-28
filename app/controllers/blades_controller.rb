@@ -6,4 +6,7 @@ class BladesController < ApplicationController
   def show
     @blade = Blade.find(params[:id])
   end
+
+  def edit
+  end
 end

@@ -11,4 +11,5 @@ Rails.application.routes.draw do
   post '/blade_smiths', to: 'blade_smiths#create'
   patch '/blade_smiths/:id', to: 'blade_smiths#update'
   post '/blade_smiths/:blade_smith_id/blades', to: 'blade_smith_blades#create'
+  get 'blades/:id/edit', to: 'blades#edit'
 end
