@@ -29,4 +29,10 @@ RSpec.describe 'blade_smiths blades index page', type: :feature do
     visit "/blade_smiths/#{@blade_smith_1.id}/blades"
     expect(page).to have_link(nil, href: '/blade_smiths')
   end
+
+  it 'has a link for new Blade' do
+    visit "/blade_smiths/#{@blade_smith_1.id}/blades"
+    expect(page).to have_link(nil, href: '/blades/new')
+  end
+
 end
