@@ -14,7 +14,7 @@ RSpec.describe 'bladesmiths blades new page', type: :feature do
     fill_in('Available', with: true)
 
     click_button('Create Blade')
-save_and_open_page
+    
     expect(current_path).to eq("/blade_smiths/#{@blade_smith_4.id}/blades")
     expect(page).to have_content("Hatchet")
   end
