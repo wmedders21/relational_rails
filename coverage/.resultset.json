@@ -303,6 +303,30 @@
           null
         ]
       },
+      "/Users/willmedders/turing/2mod/projects/relational_rails/spec/features/blade_smiths/blades/new_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          null,
+          null
+        ]
+      },
       "/Users/willmedders/turing/2mod/projects/relational_rails/spec/features/blade_smiths/edit_spec.rb": {
         "lines": [
           1,
@@ -591,6 +615,6 @@
         ]
       }
     },
-    "timestamp": 1648435532
+    "timestamp": 1648436198
   }
 }
