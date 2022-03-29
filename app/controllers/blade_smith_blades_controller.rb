@@ -1,8 +1,11 @@
 class BladeSmithBladesController < ApplicationController
   def index
     @blade_smith = BladeSmith.find(params[:blade_smith_id])
-    @blades = @blade_smith.blades
-    @sorted = @blades.sorted_by_model
+    if params[:sort] == "abc"
+      @blades = @blade_smith.blades.sorted_by_model
+    else
+      @blades = @blade_smith.blades
+    end
   end
 
   def new

@@ -1,6 +1,8 @@
 <%= link_to "Bladesmiths Index", "/blade_smiths" %><br>
 <%= link_to "Blades Index", "/blades" %><br>
 <%= link_to "New Blade", "/blade_smiths/#{@blade_smith.id}/blades/new" %><br>
+<%= link_to "Sort Alphabetically", "/blade_smiths/#{@blade_smith.id}/blades?sort=abc", method: :get %><br>
+
 
 <% @blades.each do |blade| %>
 <h1><%= blade.model %></h1>
