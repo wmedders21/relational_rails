@@ -2,6 +2,8 @@ require 'rails_helper'
 
 RSpec.describe 'blades' do
   before :each do
+    Blade.destroy_all
+    BladeSmith.destroy_all
     @bs = BladeSmith.create!(name: "Willy White", state: "KY", avg_yearly_output: 324, hand_forger: true)
     @blade_1 = @bs.blades.create!(model: "Patch Knife", length: 135, blade_material: "Damascus", handle_material: "Walnut", available: true)
     @blade_2 = @bs.blades.create!(model: "Diving Knife", length: 190, blade_material: "Stainless", handle_material: "Micarta", available: true)
@@ -51,13 +53,12 @@ RSpec.describe 'blades' do
       visit "/blades"
       expect(page).to have_link(nil, href: "/blades/#{@blade_1.id}/edit")
       expect(page).to have_link(nil, href: "/blades/#{@blade_2.id}/edit")
-      expect(page).to not_have_link(nil, href: "/blades/#{@blade_3.id}/edit")
-      expect(page).to not_have_link(nil, href: "/blades/#{@blade_4.id}/edit")
-      click_link("Update #{blade_1.model}")
-      expect(current_path).to eq("/blades/#{blade_1.id}/edit")
+      expect(page).to have_no_link(nil, href: "/blades/#{@blade_3.id}/edit")
+      expect(page).to have_no_link(nil, href: "/blades/#{@blade_4.id}/edit")
+      click_link("Update #{@blade_1.model}")
+      expect(current_path).to eq("/blades/#{@blade_1.id}/edit")
     end
   end
-
 
   describe 'blades show page', type: :feature do
     it 'displays the model of blade with corresponding id and attributes' do

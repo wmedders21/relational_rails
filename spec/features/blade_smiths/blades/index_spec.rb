@@ -41,4 +41,14 @@ RSpec.describe 'blade_smiths blades index page', type: :feature do
     expect(@blade_1.model).to appear_before(@blade_4.model)
   end
 
+  it 'has links to update each blade' do
+    visit "/blade_smiths/#{@blade_smith_1.id}/blades"
+
+    expect(page).to have_link(nil, href: "/blades/#{@blade_1.id}/edit")
+    expect(page).to have_link(nil, href: "/blades/#{@blade_2.id}/edit")
+    expect(page).to have_link(nil, href: "/blades/#{@blade_3.id}/edit")
+    expect(page).to have_link(nil, href: "/blades/#{@blade_4.id}/edit")
+    click_link("Update #{@blade_1.model}")
+    expect(current_path).to eq("/blades/#{@blade_1.id}/edit")
+  end
 end
