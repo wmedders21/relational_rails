@@ -51,4 +51,20 @@ RSpec.describe 'blade_smiths blades index page', type: :feature do
     click_link("Update #{@blade_1.model}")
     expect(current_path).to eq("/blades/#{@blade_1.id}/edit")
   end
+
+  it 'has a form that sets a threshold' do
+    visit "/blade_smiths/#{@blade_smith_1.id}/blades"
+    expect(page).to have_content(@blade_1.id)
+    expect(page).to have_content(@blade_2.id)
+    expect(page).to have_content(@blade_3.id)
+    expect(page).to have_content(@blade_4.id)
+    number = 180
+    fill_in('Threshold', with: number)
+    click_button("Only return blades longer than #{number} mm")
+    expect(current_path).to eq("/blade_smiths/#{@blade_smith_1.id}/blades")
+    expect(page).to have_content(@blade_2.id)
+    expect(page).to have_content(@blade_3.id)
+    expect(page).to have_no_content(@blade_1.id)
+    expect(page).to have_no_content(@blade_4.id)
+  end
 end
