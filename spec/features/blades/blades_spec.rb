@@ -9,7 +9,7 @@ RSpec.describe 'blades' do
     @blade_4 = @bs.blades.create!(model: "Skinner", length: 170, blade_material: "High Carbon Steel", handle_material: "Figured Maple", available: false)
   end
   describe 'blades index page', type: :feature do
-    it 'displays the model of each blade and attributes' do
+    it 'displays the model of each blade and attributes where available == true' do
       visit '/blades'
       expect(page).to have_content(@blade_1.model)
       expect(page).to have_content(@blade_1.length)
@@ -29,23 +29,11 @@ RSpec.describe 'blades' do
       expect(page).to have_content(@blade_2.created_at)
       expect(page).to have_content(@blade_2.updated_at)
 
-      expect(page).to have_content(@blade_3.model)
-      expect(page).to have_content(@blade_3.length)
-      expect(page).to have_content(@blade_3.blade_material)
-      expect(page).to have_content(@blade_3.handle_material)
-      expect(page).to have_content(@blade_3.available)
-      expect(page).to have_content(@blade_3.id)
-      expect(page).to have_content(@blade_3.created_at)
-      expect(page).to have_content(@blade_3.updated_at)
+      expect(page).to have_no_content(@blade_3.model)
+      expect(page).to have_no_content(@blade_3.id)
 
-      expect(page).to have_content(@blade_4.model)
-      expect(page).to have_content(@blade_4.length)
-      expect(page).to have_content(@blade_4.blade_material)
-      expect(page).to have_content(@blade_4.handle_material)
-      expect(page).to have_content(@blade_4.available)
-      expect(page).to have_content(@blade_4.id)
-      expect(page).to have_content(@blade_4.created_at)
-      expect(page).to have_content(@blade_4.updated_at)
+      expect(page).to have_no_content(@blade_4.model)
+      expect(page).to have_no_content(@blade_4.id)
     end
 
     it 'has a link to the Blades index at the top' do
