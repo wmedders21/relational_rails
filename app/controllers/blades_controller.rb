@@ -1,6 +1,6 @@
 class BladesController < ApplicationController
   def index
-    @blades = Blade.all
+    @blades = Blade.available?
   end
 
   def show
