@@ -17,6 +17,12 @@ class BladesController < ApplicationController
     redirect_to "/blades/#{blade.id}"
   end
 
+  def destroy
+    blade = Blade.find(params[:id])
+    blade.destroy
+    redirect_to "/blades"
+  end
+
   def blade_params
     params.permit(:model, :length, :blade_material, :handle_material, :available, :blade_smith_id)
   end
