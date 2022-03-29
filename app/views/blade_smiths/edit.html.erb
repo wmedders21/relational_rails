@@ -1,0 +1,11 @@
+<%= form_with url: "/blade_smiths/#{@blade_smith.id}", method: :patch, local: true do |form| %>
+  <%= form.label :name %><br>
+  <%= form.text_field :name %><br>
+  <%= form.label :state %><br>
+  <%= form.text_field :state %><br>
+  <%= form.label :avg_yearly_output %><br>
+  <%= form.text_field :avg_yearly_output %><br>
+  <%= form.label :hand_forger %><br>
+  <%= form.text_field :hand_forger %><br>
+  <%= form.submit "Update #{@blade_smith.name}" %>
+<% end %>

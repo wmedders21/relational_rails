@@ -1,3 +1,9 @@
+<%= link_to "Bladesmiths Index", "/blade_smiths" %><br>
+<%= link_to "Blades Index", "/blades" %><br>
+<%= link_to "New Blade", "/blade_smiths/#{@blade_smith.id}/blades/new" %><br>
+<%= link_to "Sort Alphabetically", "/blade_smiths/#{@blade_smith.id}/blades?sort=abc", method: :get %><br>
+
+
 <% @blades.each do |blade| %>
 <h1><%= blade.model %></h1>
 <p>Length(millimeters): <%= blade.length %></p>
@@ -7,4 +13,6 @@
 <p>Blade ID: <%= blade.id %></p>
 <p>Created at: <%= blade.created_at %></p>
 <p>Updated at: <%= blade.updated_at %></p>
+<p>Maker's ID: <%= blade.blade_smith_id %></p>
+<%= link_to "Update #{blade.model}", "/blades/#{blade.id}/edit" %>
 <% end %>
