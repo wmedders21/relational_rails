@@ -47,11 +47,12 @@ RSpec.describe 'blade smiths index page', type: :feature do
     blade_smith_4 = BladeSmith.create!(name: "Ka-Bar Knives, Inc.", state: "NY", avg_yearly_output: 15465, hand_forger: false)
 
     visit "/blade_smiths"
-
     expect(page).to have_link(nil, href: "/blade_smiths/#{blade_smith_1.id}/edit")
     expect(page).to have_link(nil, href: "/blade_smiths/#{blade_smith_2.id}/edit")
     expect(page).to have_link(nil, href: "/blade_smiths/#{blade_smith_3.id}/edit")
     expect(page).to have_link(nil, href: "/blade_smiths/#{blade_smith_4.id}/edit")
+    click_link("Update #{blade_smith_1.name}")
+    expect(current_path).to eq("/blade_smiths/#{blade_smith_1.id}/edit")
   end
 end
 

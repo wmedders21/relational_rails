@@ -1,7 +1,8 @@
 <%= link_to "Bladesmiths Index", "/blade_smiths" %><br>
 <%= link_to "Blades Index", "/blades" %><br>
-<%= link_to "New Bladesmith", "/blade_smiths/new" %>
+<%= link_to "New Bladesmith", "/blade_smiths/new" %><br>
 
 <% @blade_smiths.each do |blade_smith| %>
 <h1><%= blade_smith.name %></h1>
+<%= link_to "Update #{blade_smith.name}", "/blade_smiths/#{blade_smith.id}/edit" %>
 <% end %>
