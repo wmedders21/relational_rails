@@ -45,7 +45,6 @@ RSpec.describe 'blade smiths index page', type: :feature do
     expect(page).to have_link(nil, href: "/blade_smiths/#{@blade_smith_2.id}/edit")
     expect(page).to have_link(nil, href: "/blade_smiths/#{@blade_smith_3.id}/edit")
     expect(page).to have_link(nil, href: "/blade_smiths/#{@blade_smith_4.id}/edit")
-    save_and_open_page
     click_link("Update #{@blade_smith_1.name}")
     expect(current_path).to eq("/blade_smiths/#{@blade_smith_1.id}/edit")
   end
