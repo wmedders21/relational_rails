@@ -1,0 +1,10 @@
+<% @blades.each do |blade| %>
+  <h1><%= blade.model %></h1>
+  <p>Length(millimeters): <%= blade.length %></p>
+  <p>Blade material: <%= blade.blade_material %></p>
+  <p>Handle material: <%= blade.handle_material %></p>
+  <p>In stock? <%= blade.available %></p>
+  <p>Blade ID: <%= blade.id %></p>
+  <p>Created at: <%= blade.created_at %></p>
+  <p>Updated at: <%= blade.updated_at %></p>
+<% end %>
