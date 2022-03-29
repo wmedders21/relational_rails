@@ -30,9 +30,12 @@ RSpec.describe 'blade_smiths blades index page', type: :feature do
     expect(page).to have_link(nil, href: '/blade_smiths')
   end
 
-  it 'has a link for new Blade' do
+  it 'has a link to sort blades alphabetically' do
     visit "/blade_smiths/#{@blade_smith_1.id}/blades"
-    expect(page).to have_link(nil, href: "/blade_smiths/#{@blade_smith_1.id}/blades/new")
+    click_link("Sort Alphabetically")
+    expect(@blade_2.model).to appear_before(@blade_3.model)
+    expect(@blade_3.model).to appear_before(@blade_1.model)
+    expect(@blade_1.model).to appear_before(@blade_4.model)
   end
 
 end
