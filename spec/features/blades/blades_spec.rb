@@ -45,6 +45,17 @@ RSpec.describe 'blades' do
       visit "/blades"
       expect(page).to have_link(nil, href: '/blade_smiths')
     end
+
+    it 'has links to update each blade' do
+
+      visit "/blades"
+      expect(page).to have_link(nil, href: "/blades/#{@blade_1.id}/edit")
+      expect(page).to have_link(nil, href: "/blades/#{@blade_2.id}/edit")
+      expect(page).to not_have_link(nil, href: "/blades/#{@blade_3.id}/edit")
+      expect(page).to not_have_link(nil, href: "/blades/#{@blade_4.id}/edit")
+      click_link("Update #{blade_1.model}")
+      expect(current_path).to eq("/blades/#{blade_1.id}/edit")
+    end
   end
 
 
