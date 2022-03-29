@@ -91,7 +91,17 @@ RSpec.describe 'blades' do
 
     it 'has a link to update the blade' do
       visit "/blades/#{@blade_1.id}"
+      save_and_open_page
       expect(page).to have_link(nil, href: "/blades/#{@blade_1.id}/edit")
+    end
+
+    it 'has a link to delete the blade' do
+      visit "/blades"
+      expect(page).to have_content(@blade_1.id)
+      visit "/blades/#{@blade_1.id}"
+      click_link("Delete Blade")
+      expect(current_path).to eq("/blades")
+      expect(page).to have_no_content(@blade_1.id)
     end
   end
 end
