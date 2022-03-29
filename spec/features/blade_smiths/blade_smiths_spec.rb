@@ -130,7 +130,7 @@ RSpec.describe 'blade smiths show page', type: :feature do
 
   it 'has a link that deletes the bladesmith' do
     visit "/blade_smiths/#{@blade_smith_1.id}"
-    click_link("Delete #{@blade_smith_1.name}")
+    click_link("Delete Bladesmith")
     expect(current_path).to eq('/blade_smiths')
     expect(page).to have_no_content("#{@blade_smith_1.name}")
   end
