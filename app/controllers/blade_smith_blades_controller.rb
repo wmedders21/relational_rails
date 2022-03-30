@@ -3,8 +3,7 @@ class BladeSmithBladesController < ApplicationController
     @blade_smith = BladeSmith.find(params[:blade_smith_id])
     if params[:sort] == "abc"
       @blades = @blade_smith.blades.sorted_by_model
-    elsif params[:threshold]
-      binding.pry
+    elsif params[:threshold] != nil
       @blades = @blade_smith.blades.over_threshold(params[:threshold])
     else
       @blades = @blade_smith.blades

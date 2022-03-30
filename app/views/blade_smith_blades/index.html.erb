@@ -2,7 +2,7 @@
 <%= link_to "Blades Index", "/blades" %><br>
 <%= link_to "New Blade", "/blade_smiths/#{@blade_smith.id}/blades/new" %><br>
 <%= link_to "Sort Alphabetically", "/blade_smiths/#{@blade_smith.id}/blades?sort=abc", method: :get %><br>
-<%= form_with url: "/blade_smiths/#{@blade_smith.id}/blades", method: :get do |form| %>
+<%= form_with url: "/blade_smiths/#{@blade_smith.id}/blades?sort=threshold", method: :get, local: true do |form| %>
   <%= form.label :threshold, "Threshold (millimeters)=>" %>
   <%= form.text_field :threshold %>
   <%= form.submit "Click to only see models longer than the threshold" %>
