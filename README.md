@@ -47,7 +47,7 @@ The project home page and requirements can be found [here](https://backend.turin
 
 **Run Rails Server in Command-Line** Run `rails s` in command line.
 
-**Open Web Browser and go to URL *Localhost:3000*** Enjoy the app :)
+**Open Web Browser and go to URL *Localhost:3000/blade_smiths*** Enjoy the app :)
 
 ## Features
 
@@ -55,4 +55,3 @@ From the main page, the user will be able to navigate through *Bladesmiths* and 
 
 ## Database Schema
 <img width="864" alt="Screen Shot 2022-03-30 at 5 44 06 PM" src="https://user-images.githubusercontent.com/93014155/160936219-a27cc258-a07f-418a-82a4-707a5f2f6678.png">
-
