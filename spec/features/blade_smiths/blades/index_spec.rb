@@ -75,14 +75,19 @@ RSpec.describe 'blade_smiths blades index page', type: :feature do
     expect(page).to have_content(@blade_4.model)
 
     click_link("Delete #{@blade_1.model}")
-
     expect(current_path).to eq("/blades")
     expect(page).to have_no_content(@blade_1.model)
+
     click_link("Delete #{@blade_2.model}")
+    expect(current_path).to eq("/blades")
     expect(page).to have_no_content(@blade_2.model)
+
     click_link("Delete #{@blade_3.model}")
+    expect(current_path).to eq("/blades")
     expect(page).to have_no_content(@blade_3.model)
+
     click_link("Delete #{@blade_4.model}")
+    expect(current_path).to eq("/blades")
     expect(page).to have_no_content(@blade_4.model)
   end
 end
