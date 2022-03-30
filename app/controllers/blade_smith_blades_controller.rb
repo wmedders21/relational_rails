@@ -6,10 +6,10 @@ class BladeSmithBladesController < ApplicationController
     else
       @blades = @blade_smith.blades
     end
-
     if params[:threshold].class == String
       @blades = @blade_smith.blades.over_threshold(params[:threshold])
     end
+
   end
 
   def new

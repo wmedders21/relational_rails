@@ -26,8 +26,7 @@ RSpec.describe Blade, type: :model do
     describe '#over_threshold' do
       it 'returns only records above a specific threshold' do
         expect(Blade.over_threshold(180)).to eq([@blade_2, @blade_3])
-        expect(Blade.over_threshold(190)).to eq([@blade_3])
-
+        expect(@blade_smith_1.blades.over_threshold(190)).to eq([@blade_3])
       end
     end
   end

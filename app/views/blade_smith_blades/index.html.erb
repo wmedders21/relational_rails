@@ -20,7 +20,7 @@
 <p>Created at: <%= blade.created_at %></p>
 <p>Updated at: <%= blade.updated_at %></p>
 <p>Maker's ID: <%= blade.blade_smith_id %></p>
-<%= link_to "Update #{blade.model}", "/blades/#{blade.id}/edit" %>
+<%= link_to "Update #{blade.model}", "/blades/#{blade.id}/edit" %><br>
 <%= link_to "Delete #{blade.model}", "/blades/#{blade.id}", method: :delete %>
 
 <% end %>
