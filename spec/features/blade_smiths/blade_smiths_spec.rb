@@ -55,14 +55,14 @@ RSpec.describe 'blade smiths index page', type: :feature do
     expect(page).to have_content("#{@blade_smith_2.name}")
     expect(page).to have_content("#{@blade_smith_3.name}")
     expect(page).to have_content("#{@blade_smith_4.name}")
-    click_link("Delete #{@blade_smith_1}")
+    click_link("Delete #{@blade_smith_1.name}")
     expect(current_path).to eq('/blade_smiths')
     expect(page).to have_no_content("#{@blade_smith_1.name}")
-    click_link("Delete #{@blade_smith_2}")
+    click_link("Delete #{@blade_smith_2.name}")
     expect(page).to have_no_content("#{@blade_smith_2.name}")
-    click_link("Delete #{@blade_smith_3}")
+    click_link("Delete #{@blade_smith_3.name}")
     expect(page).to have_no_content("#{@blade_smith_3.name}")
-    click_link("Delete #{@blade_smith_4}")
+    click_link("Delete #{@blade_smith_4.name}")
     expect(page).to have_no_content("#{@blade_smith_4.name}")
   end
 end
