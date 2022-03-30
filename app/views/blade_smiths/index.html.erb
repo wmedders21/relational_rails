@@ -4,5 +4,7 @@
 
 <% @blade_smiths.each do |blade_smith| %>
 <h1><%= blade_smith.name %></h1>
-<%= link_to "Update #{blade_smith.name}", "/blade_smiths/#{blade_smith.id}/edit" %>
+<%= link_to "Update #{blade_smith.name}", "/blade_smiths/#{blade_smith.id}/edit" %><br>
+<%= link_to "Delete #{blade_smith.name}", "/blade_smiths/#{blade_smith.id}", method: :delete %>
+
 <% end %>

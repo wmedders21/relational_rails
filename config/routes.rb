@@ -14,5 +14,5 @@ Rails.application.routes.draw do
   get 'blades/:id/edit', to: 'blades#edit'
   patch '/blades/:id', to: 'blades#update'
   delete '/blade_smiths/:id', to: 'blade_smiths#destroy'
-  delete 'blades/:id', to: 'blades#destroy'
+  delete '/blades/:id', to: 'blades#destroy'
 end
