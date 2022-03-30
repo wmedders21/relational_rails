@@ -10,4 +10,5 @@
 <p>Created at : <%= @blade_smith.created_at %></p>
 <p>Updated at: <%= @blade_smith.updated_at %></p>
 <p>Blade Simth ID : <%= @blade_smith.id %></p>
-<%= link_to "Update Bladesmith", "/blade_smiths/#{@blade_smith.id}/edit" %>
+<%= link_to "Update Bladesmith", "/blade_smiths/#{@blade_smith.id}/edit" %><br>
+<%= link_to "Delete Bladesmith", "/blade_smiths/#{@blade_smith.id}", method: :delete %>

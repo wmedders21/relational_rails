@@ -51,4 +51,52 @@ RSpec.describe 'blade_smiths blades index page', type: :feature do
     click_link("Update #{@blade_1.model}")
     expect(current_path).to eq("/blades/#{@blade_1.id}/edit")
   end
+
+  it 'has a form that sets a threshold' do
+    visit "/blade_smiths/#{@blade_smith_1.id}/blades"
+    expect(page).to have_content(@blade_1.id)
+    expect(page).to have_content(@blade_2.id)
+    expect(page).to have_content(@blade_3.id)
+    expect(page).to have_content(@blade_4.id)
+    fill_in('Threshold', with: "180")
+    click_on("Click to only see models longer than the threshold")
+    expect(current_path).to eq("/blade_smiths/#{@blade_smith_1.id}/blades")
+    expect(page).to have_content(@blade_2.id)
+    expect(page).to have_content(@blade_3.id)
+    expect(page).to have_no_content(@blade_1.id)
+    expect(page).to have_no_content(@blade_4.id)
+  end
+
+  it 'has links to delete each blade' do
+    visit "/blade_smiths/#{@blade_smith_1.id}/blades"
+    expect(page).to have_content(@blade_1.model)
+    expect(page).to have_content(@blade_2.model)
+    expect(page).to have_content(@blade_3.model)
+    expect(page).to have_content(@blade_4.model)
+
+    click_link("Delete #{@blade_1.model}")
+    expect(current_path).to eq("/blades")
+    expect(page).to have_no_content(@blade_1.model)
+
+    visit "/blade_smiths/#{@blade_smith_1.id}/blades"
+    click_link("Delete #{@blade_2.model}")
+    expect(current_path).to eq("/blades")
+    expect(page).to have_no_content(@blade_2.model)
+
+    visit "/blade_smiths/#{@blade_smith_1.id}/blades"
+    click_link("Delete #{@blade_3.model}")
+    expect(current_path).to eq("/blades")
+    expect(page).to have_no_content(@blade_3.model)
+
+    visit "/blade_smiths/#{@blade_smith_1.id}/blades"
+    click_link("Delete #{@blade_4.model}")
+    expect(current_path).to eq("/blades")
+    expect(page).to have_no_content(@blade_4.model)
+
+    visit "/blade_smiths/#{@blade_smith_1.id}/blades"
+    expect(page).to have_no_content(@blade_1.model)
+    expect(page).to have_no_content(@blade_2.model)
+    expect(page).to have_no_content(@blade_3.model)
+    expect(page).to have_no_content(@blade_4.model)
+  end
 end
